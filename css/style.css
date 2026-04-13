@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Updated to a mix of Red and Maroon */
+    background: linear-gradient(135deg, #800000 0%, #b30000 45%, #e63946 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #1a1a1a; /* Darker to match the red theme */
+    padding: 15px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #e63946;
+}
+
+/* Main Content Layout */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+    padding: 0 10%;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text Styling */
+.hero-text {
+    max-width: 500px;
+    color: #fff; /* Changed to white for better contrast against dark red */
+}
+
+.intro {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 0.9;
+    margin: 10px 0;
+    color: #ffffff;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #f1f1f1;
+}
+
+/* Sidebar & Cards */
+.hero-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-card {
+    width: 180px;
+    height: 180px;
+    background: #222; 
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #444;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-card {
+    width: 180px;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+    border-radius: 40px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-card p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icons a {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.icons a:hover {
+    transform: translateY(-3px);
+}
+
+.ig { color: #E1306C; }
+.fb { color: #4267B2; }
+.tk { color: #000000; }
